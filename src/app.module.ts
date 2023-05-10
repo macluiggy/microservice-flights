@@ -11,7 +11,7 @@ import { FlightModule } from './flight/flight.module';
       envFilePath: ['.env.development', '.env.production'],
       isGlobal: true,
     }),
-    MongooseModule.forRoot(process.env.MONGO_URL),
+    MongooseModule.forRoot(process.env.URI_MONGODB),
     FlightModule,
   ],
   controllers: [AppController],
