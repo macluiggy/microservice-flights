@@ -1,4 +1,4 @@
-FROM node:16-alpine3.16
+FROM node:14
 
 WORKDIR /app
 
@@ -8,6 +8,5 @@ RUN npm install
 
 COPY ./dist ./src
 
-EXPOSE 3000
 
 CMD ["node", "src/main.js"]
